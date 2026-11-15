@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Farmart Breakout – preview</title>
+<style>
+body{margin:0;font-family:system-ui,Arial,sans-serif;background:#f6f7f2;color:#222}
+header{background:#fff;border-bottom:1px solid #e3e3dc;padding:14px 5vw;display:flex;gap:24px;align-items:center;position:sticky;top:0}
+header b{font-size:22px;color:#2f8f3e}header span{color:#666;font-size:14px}
+.hero{margin:20px 5vw;border-radius:16px;background:linear-gradient(120deg,#cfe8c6,#f5ecc9);padding:7vw 6vw}
+.hero h1{margin:0 0 8px;font-size:clamp(26px,5vw,52px)}.hero p{margin:0;color:#444}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px;margin:0 5vw 40px}
+.p{background:#fff;border-radius:12px;padding:12px;border:1px solid #e6e6de}.p i{display:block;height:110px;border-radius:8px;background:#e9efe1;margin-bottom:10px}
+.p u{display:block;height:10px;background:#ddd;margin:6px 0;border-radius:4px;width:70%}
+#replay{position:fixed;left:12px;bottom:12px;z-index:99;padding:10px 14px;border:0;border-radius:99px;background:#222;color:#fff;font-weight:600;cursor:pointer}
+</style>
+<link rel="stylesheet" href="../src/farmart-breakout.css">
+</head><body>
+<header><b>Farmart</b><span>Home · Shop · Vegetables · Fruits · Contact</span></header>
+<div class="hero"><h1>Fresh groceries, delivered.</h1><p>This is a stand-in page. The effect starts ~2.5s after load.</p></div>
+<div class="grid"><div class="p"><i></i><u></u><u></u></div><div class="p"><i></i><u></u><u></u></div><div class="p"><i></i><u></u><u></u></div><div class="p"><i></i><u></u><u></u></div><div class="p"><i></i><u></u><u></u></div><div class="p"><i></i><u></u><u></u></div><div class="p"><i></i><u></u><u></u></div><div class="p"><i></i><u></u><u></u></div></div>
+<button id="replay" onclick="FarmartBreakout.close();setTimeout(function(){FarmartBreakout.play()},600)">▶ Replay</button>
+<script>window.FARMART_BREAKOUT={force:true}</script>
+<script src="../src/farmart-breakout.js"></script>
+</body></html>
